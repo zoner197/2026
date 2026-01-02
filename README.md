@@ -2,19 +2,26 @@
 This vault is my central hub for all school notes, assignments, projects, and ideas in 2026.
 Designed for fast access, organization, and review.
 
+---
+
 # Structure
 
 ## Folders
+
 `README.md` - This
 `Subject/` - Base and notes for each subject
 `templates/` - Note templates to quickly start writing
 Any additional folders are for projects, ideas, and other personal files.
 
 ## Bases
+
 Every subject folder contains a base `Subject.base`. The base provides a UI which groups notes by term, going from term 4 to term 1. Card and table views are provided, both of which show the status and difficulty of each topic.
 
 ## Notes
+
 Each note `topic.md` starts with a *frontmatter* which contains the properties of the note (e.g. subject, topic, date, difficulty). The rest of the note is composed of sections such as Retrieval, Notes, and Summary.
+
+---
 
 # Templates
 
@@ -73,6 +80,45 @@ The template for a summary includes a default frontmatter with the following pro
 
 This template contains no default headings.
 
+---
+
 # Plugins
 
-## 
+## Advanced Tables
+
+Provides advanced table actions.
+
+## Auto Template Trigger
+
+Automatically prompts to select a template upon creating a new note.
+
+## Better Word Count
+
+Counts the number of words in a selection. Also displays the number of words under each section/heading.
+
+## Excel to Markdown Table
+
+Allows for copy-pasting Excel tables into Markdown notes.
+
+## File Explorer Note Count
+
+Shows the number of notes in a folder.
+
+## Fit
+
+Sync to Github.
+
+## Live Background
+
+Adds a wallpaper.
+
+## Manual Sorting
+
+Allows for manual sorting in the file explorer through drag-and-drop interface.
+
+## Omnisearch
+
+Better searching.
+
+## Quiz Generator
+
