@@ -1,0 +1,50 @@
+formulas:
+  Difficulty: difficulty
+  Status: status
+  Topic: topic
+  Date: date
+  Term: term
+views:
+  - type: cards
+    name: Cards
+    filters:
+      or:
+        - file.folder == "Physics"
+        - subject == "Physics"
+    groupBy:
+      property: term
+      direction: DESC
+    order:
+      - formula.Topic
+      - formula.Term
+      - formula.Status
+      - formula.Difficulty
+    sort:
+      - property: formula.Topic
+        direction: ASC
+    columnSize:
+      formula.Topic: 686
+      formula.Term: 61
+      formula.Status: 179
+      formula.Difficulty: 216
+  - type: table
+    name: Table
+    filters:
+      or:
+        - file.folder == "Physics"
+        - subject == "Physics"
+    groupBy:
+      property: formula.Term
+      direction: DESC
+    order:
+      - formula.Topic
+      - formula.Difficulty
+      - formula.Status
+      - tags
+    sort:
+      - property: formula.Topic
+        direction: ASC
+    columnSize:
+      formula.Topic: 657
+      formula.Difficulty: 89
+      formula.Status: 155
