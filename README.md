@@ -97,7 +97,6 @@ The quizzes consist of a custom ratio of types of questions, including but not l
 - Long answer
 
 
-
 ---
 
 # Plugins
