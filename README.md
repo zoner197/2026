@@ -84,7 +84,9 @@ This template contains no default headings.
 
 # Retrieval
 
+Since every school nags students about Retrieval Practice techniques, the 2026 vault is specially designed to not let their efforts go to waste.
 
+The whole vault is well organized with subject folders, standard templated topic notes,
 
 ---
 
