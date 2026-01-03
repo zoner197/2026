@@ -2,6 +2,8 @@
 This vault is my central hub for all school notes, assignments, projects, and ideas in 2026.
 Designed for fast access, organization, and review.
 
+## 
+
 ---
 
 # Structure
@@ -122,3 +124,16 @@ Better searching.
 
 ## Quiz Generator
 
+Generates quizzes using local AI based on selected notes and folders.
+
+## Style Settings
+
+Allows for fine-tuning of Obsidian UI.
+
+## Text Extractor
+
+Extracts text from PDFs, images, and other files through OCR.
+
+## Webpage HTML Export
+
+Export `.md` to `.HTML`. Can export individual notes, folders, or the entire vault.
