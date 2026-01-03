@@ -86,7 +86,17 @@ This template contains no default headings.
 
 Since every school nags students about Retrieval Practice techniques, the 2026 vault is specially designed to not let their efforts go to waste.
 
-The whole vault is well organized with subject folders, standard templated topic notes,
+The whole vault is well organized with subject folders, standard templated topic notes, summaries, tags, and other attributes. This allows for easily picking exactly what to study with minimal effort beforehand.
+
+But this alone isn't enough - I'd still need to find or make questions. That's not happening... Not without the Quiz Generator plugin! The Quiz Generator plugin allows me to pick notes and folders to generate quizzes on using AI.
+
+The quizzes consist of a custom ratio of types of questions, including but not limited to:
+- Multiple choice
+- Fill in the blanks
+- Short answer
+- Long answer
+
+
 
 ---
 
