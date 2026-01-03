@@ -2,8 +2,6 @@
 This vault is my central hub for all school notes, assignments, projects, and ideas in 2026.
 Designed for fast access, organization, and review.
 
-## 
-
 ---
 
 # Structure
@@ -81,6 +79,12 @@ The template for a summary includes a default frontmatter with the following pro
 - Tags: Additional information.
 
 This template contains no default headings.
+
+---
+
+# Retrieval
+
+
 
 ---
 
