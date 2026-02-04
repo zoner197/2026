@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":"54f685c0a32b3a6d","x":-125,"y":-30,"width":250,"height":60,"type":"text","text":"Cafe Loco"},
+		{"id":"1111a71749808c97","x":360,"y":-473,"width":400,"height":264,"type":"file","file":"Pasted image 20260204141737.png"},
+		{"id":"8ea8d419734b7e83","x":360,"y":200,"width":400,"height":195,"type":"file","file":"Pasted image 20260204141810.png"},
+		{"id":"0c7fcf382c49ee0a","x":360,"y":-155,"width":400,"height":310,"type":"file","file":"Pasted image 20260204141855.png"},
+		{"id":"b366f06603109a79","x":360,"y":480,"width":400,"height":350,"type":"file","file":"Pasted image 20260204141919.png"},
+		{"id":"54bbd80037b9973c","x":360,"y":-720,"width":400,"height":185,"type":"file","file":"Pasted image 20260204141949.png"},
+		{"id":"b3ae9d03b79d1187","x":-517,"y":-30,"width":250,"height":60,"type":"text","text":"Usability Principles"},
+		{"id":"e3c2340ac5d33dfd","x":-920,"y":-269,"width":250,"height":60,"type":"text","text":"Accessibility"},
+		{"id":"8d0ecd7de351854d","x":-920,"y":-169,"width":250,"height":60,"type":"text","text":"Effectiveness"},
+		{"id":"220821e014e6844b","x":-920,"y":11,"width":250,"height":60,"type":"text","text":"Utility"},
+		{"id":"80ec9cc0167df9c6","x":-920,"y":111,"width":250,"height":60,"type":"text","text":"Learnability"},
+		{"id":"628e573656ae317d","x":-919,"y":-78,"width":250,"height":60,"type":"text","text":"Safety"},
+		{"id":"b29518d2b2ac1d2f","x":-919,"y":211,"width":250,"height":60,"type":"text","text":"Apple iOS Accessibility Framework"}
+	],
+	"edges":[
+		{"id":"ab39547ab4983159","fromNode":"54f685c0a32b3a6d","fromSide":"left","toNode":"b3ae9d03b79d1187","toSide":"right"},
+		{"id":"d0ef802a553eeb11","fromNode":"b3ae9d03b79d1187","fromSide":"left","toNode":"e3c2340ac5d33dfd","toSide":"right"},
+		{"id":"bd3938a873174639","fromNode":"b3ae9d03b79d1187","fromSide":"left","toNode":"8d0ecd7de351854d","toSide":"right"},
+		{"id":"6665fa7e8cf96d5b","fromNode":"b3ae9d03b79d1187","fromSide":"left","toNode":"628e573656ae317d","toSide":"right"},
+		{"id":"5bf96126313b4458","fromNode":"b3ae9d03b79d1187","fromSide":"left","toNode":"220821e014e6844b","toSide":"right"},
+		{"id":"daa59d9bf22ccc56","fromNode":"b3ae9d03b79d1187","fromSide":"left","toNode":"80ec9cc0167df9c6","toSide":"right"},
+		{"id":"bc3d180dcfd6f341","fromNode":"b3ae9d03b79d1187","fromSide":"left","toNode":"b29518d2b2ac1d2f","toSide":"right"},
+		{"id":"008d977e5d42341f","fromNode":"54f685c0a32b3a6d","fromSide":"right","toNode":"1111a71749808c97","toSide":"left"},
+		{"id":"c1cdaf61f0ddd501","fromNode":"54f685c0a32b3a6d","fromSide":"right","toNode":"8ea8d419734b7e83","toSide":"left"},
+		{"id":"d981d0fd5adac5b4","fromNode":"54f685c0a32b3a6d","fromSide":"right","toNode":"0c7fcf382c49ee0a","toSide":"left"},
+		{"id":"7d722bbd55d7b00a","fromNode":"54f685c0a32b3a6d","fromSide":"right","toNode":"b366f06603109a79","toSide":"left"},
+		{"id":"6b41b65cca0aaf66","fromNode":"54f685c0a32b3a6d","fromSide":"right","toNode":"54bbd80037b9973c","toSide":"left"}
+	]
+}

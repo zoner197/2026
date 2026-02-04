@@ -1,0 +1,35 @@
+{
+	"nodes":[
+		{"id":"719822a9b7ac171c","type":"text","text":"Minecraft","x":-125,"y":-30,"width":250,"height":60},
+		{"id":"336f2f889cd1cee3","type":"text","text":"Accessibility","x":-129,"y":-253,"width":250,"height":60},
+		{"id":"619d2032791708db","type":"text","text":"Effectiveness","x":320,"y":-30,"width":250,"height":60},
+		{"id":"a476dc46cb7b7cb3","type":"text","text":"Safety","x":-600,"y":-30,"width":250,"height":60},
+		{"id":"b096b6ed9534a3bc","type":"text","text":"Learnability","x":125,"y":195,"width":250,"height":60},
+		{"id":"d5b418ff0e9ea3f2","type":"text","text":"Utility","x":-375,"y":195,"width":250,"height":60},
+		{"id":"970d7da1d5222dee","type":"text","text":"Blind people cannot play","x":-350,"y":-451,"width":250,"height":60},
+		{"id":"9a4fea58e319c42d","type":"text","text":"Directional audio subtitles for deaf","x":70,"y":-451,"width":250,"height":60},
+		{"id":"f8e5f97643a0e4c8","x":685,"y":-223,"width":250,"height":60,"type":"text","text":"User can quickly create structures"},
+		{"id":"8f59952320251c2d","x":664,"y":127,"width":250,"height":60,"type":"text","text":"Builds lack detail due to blocks"},
+		{"id":"fcc0c86a2faaa90a","x":-37,"y":412,"width":250,"height":60,"type":"text","text":"Intuitive mouse controls for breaking and placing"},
+		{"id":"de8566a373ecf322","x":289,"y":412,"width":250,"height":60,"type":"text","text":"Not-so-intuitive WASD controls for movement"},
+		{"id":"88c6c0a474fb85d9","x":-379,"y":412,"width":250,"height":60,"type":"text","text":"Allows the user to mine and craft, as the name suggests"},
+		{"id":"5c2bd8cf8df5d576","x":-1000,"y":-193,"width":250,"height":60,"type":"text","text":"Chat filtering"},
+		{"id":"06727bdc9b25e2fe","x":-993,"y":134,"width":250,"height":60,"type":"text","text":"No build filtering"}
+	],
+	"edges":[
+		{"id":"6c3344e398df923f","fromNode":"719822a9b7ac171c","fromSide":"top","toNode":"336f2f889cd1cee3","toSide":"bottom"},
+		{"id":"0b3ca81e204f77b3","fromNode":"719822a9b7ac171c","fromSide":"right","toNode":"619d2032791708db","toSide":"left"},
+		{"id":"4d943e4ee30e6daf","fromNode":"719822a9b7ac171c","fromSide":"left","toNode":"a476dc46cb7b7cb3","toSide":"right"},
+		{"id":"6d4d01330bad4fa8","fromNode":"719822a9b7ac171c","fromSide":"bottom","toNode":"d5b418ff0e9ea3f2","toSide":"top"},
+		{"id":"fc9fe86386c4d354","fromNode":"719822a9b7ac171c","fromSide":"bottom","toNode":"b096b6ed9534a3bc","toSide":"top"},
+		{"id":"f2075d0b53c32d6a","fromNode":"336f2f889cd1cee3","fromSide":"top","toNode":"970d7da1d5222dee","toSide":"bottom"},
+		{"id":"3c90e3044891b9e3","fromNode":"336f2f889cd1cee3","fromSide":"top","toNode":"9a4fea58e319c42d","toSide":"bottom"},
+		{"id":"390c8735ab36fa04","fromNode":"619d2032791708db","fromSide":"right","toNode":"f8e5f97643a0e4c8","toSide":"left"},
+		{"id":"241883f95296b9a6","fromNode":"619d2032791708db","fromSide":"right","toNode":"8f59952320251c2d","toSide":"left"},
+		{"id":"911747f5006b45ec","fromNode":"b096b6ed9534a3bc","fromSide":"bottom","toNode":"fcc0c86a2faaa90a","toSide":"top"},
+		{"id":"769d3ae998c94b2a","fromNode":"b096b6ed9534a3bc","fromSide":"bottom","toNode":"de8566a373ecf322","toSide":"top"},
+		{"id":"af87d2b79b16e872","fromNode":"d5b418ff0e9ea3f2","fromSide":"bottom","toNode":"88c6c0a474fb85d9","toSide":"top"},
+		{"id":"88680c5812f16228","fromNode":"a476dc46cb7b7cb3","fromSide":"left","toNode":"5c2bd8cf8df5d576","toSide":"right"},
+		{"id":"132d7a7bb8d364b9","fromNode":"a476dc46cb7b7cb3","fromSide":"left","toNode":"06727bdc9b25e2fe","toSide":"right"}
+	]
+}
