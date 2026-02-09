@@ -1,11 +1,11 @@
 {
 	"nodes":[
 		{"id":"54f685c0a32b3a6d","type":"text","text":"Cafe Loco","x":-125,"y":-30,"width":250,"height":60},
-		{"id":"1111a71749808c97","type":"file","file":"Pasted image 20260204141737.png","x":360,"y":-473,"width":400,"height":264},
-		{"id":"8ea8d419734b7e83","type":"file","file":"Pasted image 20260204141810.png","x":360,"y":200,"width":400,"height":195},
-		{"id":"0c7fcf382c49ee0a","type":"file","file":"Pasted image 20260204141855.png","x":360,"y":-155,"width":400,"height":310},
-		{"id":"b366f06603109a79","type":"file","file":"Pasted image 20260204141919.png","x":360,"y":480,"width":400,"height":350},
-		{"id":"54bbd80037b9973c","type":"file","file":"Pasted image 20260204141949.png","x":360,"y":-720,"width":399,"height":185},
+		{"id":"1111a71749808c97","type":"file","file":"Attachments/Pasted image 20260204141737.png","x":360,"y":-473,"width":400,"height":264},
+		{"id":"8ea8d419734b7e83","type":"file","file":"Attachments/Pasted image 20260204141810.png","x":360,"y":200,"width":400,"height":195},
+		{"id":"0c7fcf382c49ee0a","type":"file","file":"Attachments/Pasted image 20260204141855.png","x":360,"y":-155,"width":400,"height":310},
+		{"id":"b366f06603109a79","type":"file","file":"Attachments/Pasted image 20260204141919.png","x":360,"y":480,"width":400,"height":350},
+		{"id":"54bbd80037b9973c","type":"file","file":"Attachments/Pasted image 20260204141949.png","x":360,"y":-720,"width":399,"height":185},
 		{"id":"b3ae9d03b79d1187","type":"text","text":"Usability Principles","x":-517,"y":-30,"width":250,"height":60},
 		{"id":"e3c2340ac5d33dfd","type":"text","text":"Accessibility","x":-920,"y":-269,"width":250,"height":60},
 		{"id":"8d0ecd7de351854d","type":"text","text":"Effectiveness","x":-920,"y":-169,"width":250,"height":60},
@@ -13,8 +13,8 @@
 		{"id":"80ec9cc0167df9c6","type":"text","text":"Learnability","x":-920,"y":111,"width":250,"height":60},
 		{"id":"628e573656ae317d","type":"text","text":"Safety","x":-919,"y":-78,"width":250,"height":60},
 		{"id":"b29518d2b2ac1d2f","type":"text","text":"Apple iOS Accessibility Framework","x":-919,"y":211,"width":250,"height":60},
-		{"id":"43614eabdffcde62","type":"file","file":"Pasted image 20260204144936.png","x":360,"y":-960,"width":400,"height":170},
-		{"id":"bf5bef52ecfa190f","type":"file","file":"Pasted image 20260204145001.png","x":-870,"y":-909,"width":400,"height":189}
+		{"id":"43614eabdffcde62","type":"file","file":"Attachments/Pasted image 20260204144936.png","x":360,"y":-960,"width":400,"height":170},
+		{"id":"bf5bef52ecfa190f","type":"file","file":"Attachments/Pasted image 20260204145001.png","x":-870,"y":-909,"width":400,"height":189}
 	],
 	"edges":[
 		{"id":"ab39547ab4983159","fromNode":"54f685c0a32b3a6d","fromSide":"left","toNode":"b3ae9d03b79d1187","toSide":"right"},
