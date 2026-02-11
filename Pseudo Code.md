@@ -17,7 +17,7 @@ Write an algorithm in pseudocode that keeps track of the sum of numbers entered 
 ```pseudo
 BEGIN
 	SET total = 0
-	WHILE total is not equal to 0 DO
+	WHILE total >!= to 100 DO
 		INPUT number
 		SET total += number
 	ENDWHILE
@@ -28,7 +28,19 @@ END
 # Activity 3.3 B
 Write an algorithm in pseudocode that a teacher could use to work out the average score for a class. The teacher will enter the value -1 when all grades have been entered for the class. 
 ```pseudo
-SET grade = 0
-SET total = 0
-SET num
+BEGIN
+	SET grade = 0
+	SET total = 0
+	SET n     = 0
+	
+	REPEAT
+		INPUT grade
+		
+		SET n += 1
+		set total += grade
+	UNTIL grade != -1
+	
+	OUTPUT "Average is: "
+	OUTPUT total/n
+END
 ```
