@@ -44,3 +44,5 @@ BEGIN
 	OUTPUT total/n
 END
 ```
+
+# Activity 3.3 C
