@@ -46,3 +46,34 @@ END
 ```
 
 # Activity 3.3 C
+Convert the flow chart into pseudocode.
+![[Pseudo Code.png]]
+
+```pseudo
+BEGIN
+	A
+	N
+	IF X = 5 THEN
+		A
+	ELSE
+		S
+	ENDIF
+END
+```
+
+# Activity 3.3 D
+Convert the flow chart into pseudocode.
+![[Pseudo Code-1.png]]
+
+```pseudo
+BEGIN
+	A
+	LABEL goto_n
+	N
+	IF X != 5 THEN
+		S
+	ELSE
+		GOTO goto_n
+	ENDIF
+END
+```
