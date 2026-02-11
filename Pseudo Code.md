@@ -77,3 +77,16 @@ BEGIN
 	ENDIF
 END
 ```
+
+# Activity 3.3 E
+Convert the flow chart into pseudocode.
+![[Pseudo Code-2.png]]
+
+```pseudo
+BEGIN
+	P
+	IF x = 0 THEN
+		S
+	ELSE IF 
+END
+```
