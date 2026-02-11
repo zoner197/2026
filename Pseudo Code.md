@@ -85,8 +85,13 @@ Convert the flow chart into pseudocode.
 ```pseudo
 BEGIN
 	P
-	IF x = 0 THEN
+	IF X = 0 THEN
 		S
-	ELSE IF 
+		F
+	ELSE IF X = 5 THEN
+		F
+	ELSE
+		R
+	ENDIF
 END
 ```
