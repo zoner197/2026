@@ -12,4 +12,9 @@ Each bin contains one of the following:
 - Maximum Prize: $50,000
 - Try Again: Contestant can redrop. On the redrop, the Try Again value is replaced with $6000.
 - Multiplier: Contestant can redrop, but all bin values except Try Again and Multiplier are multiplier by 1.5. Try Again remains $6000, while Multiplier is replaced with $0.
-- The four remaining bins contain different prize values between Minimum P
+- The four remaining bins contain different prize values between $0 and $50,000.
+
+Through the use of Python and combinatorics, this investigation aims to:
+1. Analyze the probability distribution of all bins.
+2. Assign values to each bin that are within $\pm5\%$ of the Expected Return ($2000).
+3. Find the best slot for contestants to drop the ball into.
