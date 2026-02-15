@@ -18,3 +18,11 @@ Through the use of Python and combinatorics, this investigation aims to:
 1. Analyze the probability distribution of all bins.
 2. Assign values to each bin that are within $\pm5\%$ of the Expected Return ($2000).
 3. Find the best slot for contestants to drop the ball into.
+
+# Assumptions and Observations
+## Observations
+- ...
+## Assumptions
+- On a multiplier redrop, the Try Again value is not multiplied
+- ...
+
