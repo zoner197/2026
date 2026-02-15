@@ -31,7 +31,7 @@ Through the use of Python and combinatorics, this investigation aims to:
 > Please fix shitty reasoning.
 ## Observations
 - Contestants cannot get a redrop within a redrop due to the Try Again and Multiplier values being replaced. This is essential, because calculations would be recursive otherwise, leading to infinite expected values.
-- ...
+- 
 ## Assumptions
 - On a multiplier redrop, the Try Again value is not multiplied. This is essential because the expected value would be different otherwise.
 - ...
