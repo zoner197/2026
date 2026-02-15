@@ -3,6 +3,9 @@
 > "We're cooked."
 > \- Sun Tzu, The Art of War
 
+Name: Kavii Sompura
+Student Number: 165==
+
 # Contents
 ...
 
@@ -10,6 +13,9 @@
 ...
 
 # Abstract
+> [!note]
+> Please shorten and convert dot points into paragraphs where appropriate.
+
 The Wall is a game show where contestants answer general knowledge questions and get to drop a ball into a quincunx if correct. They can pick from one of four slots to drop the ball from, and it can fall into one of eight bins.
 ![[Pasted image 20260214182910.png]]
 *Figure 1: The Wall Diagram*
@@ -32,9 +38,11 @@ Through the use of Python and combinatorics, this investigation aims to:
 ## Observations
 - Contestants cannot get a redrop within a redrop due to the Try Again and Multiplier values being replaced. This is essential, because calculations would be recursive otherwise, leading to infinite expected values.
 - The shape of the quincunx is four merged Pascal's Triangles, allowing for probability and path calculations through combinatorics.
+- ...
 ## Assumptions
 - On a multiplier redrop, the Try Again value is not multiplied. This is an essential assumption to ensure that the expected value remains constant.
-- The pegs are evenly spaced, the ball cannot bounce, and friction/air resistance are negligible, so there is exactly a 50% chance of the ball falling either side. This assumption is crucial for the use of Pascal's Triangle and combinatorics in the bin probability calculations.
+- The pegs are evenly spaced, the ball cannot bounce to other pegs on the same or higher row, and friction/air resistance are negligible, so there is exactly a 50% chance of the ball falling either side. This assumption is crucial for the use of Pascal's Triangle and combinatorics in the bin probability calculations.
+- The player picks their slot at random, so a $\frac{1}{4}$ probability can be assumed for each slot. This is critical because it simplifies bin probability distribution calculations to combinatorics rather than psychology.
 
 ## Mathematical Translation
 ...
