@@ -33,8 +33,8 @@ Through the use of Python and combinatorics, this investigation aims to:
 - Contestants cannot get a redrop within a redrop due to the Try Again and Multiplier values being replaced. This is essential, because calculations would be recursive otherwise, leading to infinite expected values.
 - The shape of the quincunx is four merged Pascal's Triangles, allowing for probability and path calculations through combinatorics.
 ## Assumptions
-- On a multiplier redrop, the Try Again value is not multiplied. This is essential because the expected value would be different otherwise.
-- The pegs are evenly spaced so there is exactly a 50% chance of the ball falling either side. This assumption is crucial for the use of Pascal's Triangle in the bin probability calculations.
+- On a multiplier redrop, the Try Again value is not multiplied. This is an essential assumption to ensure that the expected value remains constant.
+- The pegs are evenly spaced, the ball cannot bounce, and friction/air resistance are negligible, so there is exactly a 50% chance of the ball falling either side. This assumption is crucial for the use of Pascal's Triangle and combinatorics in the bin probability calculations.
 
 ## Mathematical Translation
 ...
