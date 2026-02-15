@@ -2,6 +2,13 @@
 ![[Pasted image 20260214162407.png]]
 > "We're cooked."
 > \- Sun Tzu, The Art of War
+
+# Contents
+...
+
+# Appendix
+...
+
 # Abstract
 The Wall is a game show where contestants answer general knowledge questions and get to drop a ball into a quincunx if correct. They can pick from one of four slots to drop the ball from, and it can fall into one of eight bins.
 ![[Pasted image 20260214182910.png]]
@@ -51,3 +58,4 @@ Through the use of Python and combinatorics, this investigation aims to:
 ...
 
 # References
+...
