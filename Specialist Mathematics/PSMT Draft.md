@@ -158,6 +158,18 @@ Bin 7: 0.015625
 
 ## Part B: Assigning Values to Bins
 To assign values to each bin and ensure the expected value is within $\pm5\%$ of $2000, the expected value formula is used with game values substituted in.
+Let:
+
+| Variable       | Meaning                               |
+| -------------- | ------------------------------------- |
+| $P_m$          | Probability of Multiplier bin         |
+| $P_M$          | Probability of Max Prize bin          |
+| $P_0$          | Probability of Min Prize bin          |
+| $P_t$          | Probability of Try Again bin          |
+| $P_1$ to $P_4$ | Probabilities of custom value bins    |
+| $r_1$ to $r_4$ | Values of custom value bins           |
+| $R$            | $$r_1P_1 + r_2P_2 + r_3P_3 + r_4P_4$$ |
+
 $$
 e = \sum xP(x)
 $$
@@ -175,3 +187,8 @@ $e_{redrop}$ is substituted into $e$ and simplified, yielding:
 $$
 e = (1.5P_m + P_t)(50000P_M + 6000P_t + R) + 50000P_M + R
 $$
+Since all the probabilities are constants, the only value left to be determined is $R$, so it is made the subject.
+$$
+\frac{e - (1.5P_m + P_t)(50000P_M + 6000P_t) - 50000P_M}{1.5P_m + P_t + 1} = R
+$$
+The 

@@ -12,12 +12,11 @@ Hopes And Dreams: None
 \binom{2}{2}_{merged} = \binom{2}{2}_{triangle\space1} + \binom{2}{1}_{triangle\space2} + \binom{2}{0}_{triangle\space3} = 4
 $$
 3. Does the above need further explanation?
-4. Are all lines of working required? (e.g. )
+4. Are all lines of working required? (e.g. every line required to simplify, rearrange, etc...)
 5. Do you require further explanation of my code?
 
 # Low Priority
 1. Are my figures properly formatted?
 2. Are formulas, images with text, and code blocks included in the word count?
-	1. ~~Does this mean I can submit a screenshot of my PSMT?~~
-3. Am I overly reliant on diagrams?
+3. Do I appear to be overly reliant on diagrams?
 4. Are my explanations coherent? (i.e. Is there a better way to order them?)
