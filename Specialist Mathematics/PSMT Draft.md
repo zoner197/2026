@@ -50,4 +50,4 @@ Consider the Pascal's Triangle in Figure 2.
 ![[Picture of pascal's triangle]]
 *Figure 2: Pascal's triangle*
 
-Each number is the same as the number of paths to its position from the top of the triangle.
+Each number is equal to the number of paths to its position from the top of the triangle.
