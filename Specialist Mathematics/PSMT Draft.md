@@ -459,3 +459,11 @@ During calculations involving a starting slot, error checks are used in every py
 > [!NOTE] Additions
 > I verified the results in hundreds of ways that I didn't mention. I'll add them in if the word count permits.
 
+## Considering Assumptions
+The model yields an expected value of $2042.74, within the $\pm5\%$ range of the $2000 target. This result is highly reasonable under the 50% split assumption. Since the model assumes symmetry, the resulting distribution is a binomial expansion. If this assumption was removed, the probabilities would skew, moving the expected return outside the $\pm5\%$.
+
+## Considering Observations
+The observation that the board consists of merged Pascal's Triangles is validated by the symmetry of the results. The probabilities found for Bin 0 (0.0156) and Bin 7 (0.0156) are identical, closely aligning with the symmetry of the quincunx. Additionally, preventing infinite redrops was critical. Without this, the expected value formula would be recursive, leading to an unreasonable payout.
+
+# Strengths
+Using python's functions 

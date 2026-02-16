@@ -22,3 +22,5 @@ $$
 3. Do I appear to be overly reliant on diagrams?
 4. Are my explanations coherent? (i.e. Is there a better way to order them?)
 5. Do I have to justify *why* I've made a python program for something rather than just calculate it manually?
+6. What are you even supposed to put in the Evaluate section?
+	1. Is human error prevention an acceptable strength?
