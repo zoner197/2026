@@ -52,13 +52,18 @@ Through the use of Python and combinatorics, this investigation aims to:
 
 # Mathematical Translation
 > [!TODO]
-> **What I need:**
-> - **Pascal's Triangle: sum of 2 numbers above = number below**
-> - **element = # of paths**
-> - **${n}\choose{k}$ for finding elements of pascal's triangle**
-> 	- **n = row**
-> 	- **k = element**
-> - **0 based**
-> - **${n}\choose{k}$ formula**
-> - **Expected value formula**
+> - [ ] Pascal's Triangle: sum of 2 numbers above = number below
+> - [ ] element = # of paths
+> - [ ] ${n}\choose{k}$ for finding elements of pascal's triangle
+> 	- [ ] n = row
+> 	- [ ] k = element
+> - [ ] 0 based
+> - [ ] ${n}\choose{k}$ formula
+> - [ ] Expected value formula
+> - [ ] Final expected value formula
+> 	- [ ] Derivation
+> 		- [ ] Redrop
+> 		- [ ] Full
+> 	- [ ] Table of variables
 
+Combinatorics, specifically relating to Pascal's Triangle, is be required to complete the task. 
