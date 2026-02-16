@@ -71,3 +71,8 @@ Where $e$ is the expected value, $x$ is the payout of an outcome, and $P(x)$ is 
 # Solve
 ## Part A: Finding Bin Probabilities
 The shape of The Wall game is that of four merged pascal's triangles, meaning that many of the patterns in a traditional Pascal's Triangle still apply.
+
+![[PSMT Draft.jpeg]]
+*Figure 3: Merged Pascal's Triangles*
+
+To find a certain element in the merged Pascal's Triangle, that element must be 
