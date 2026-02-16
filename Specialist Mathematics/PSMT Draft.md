@@ -51,21 +51,6 @@ Through the use of Python and combinatorics, this investigation aims to:
 - The player picks their slot at random, so a $\frac{1}{4}$ probability can be assumed for each slot. This is critical because it simplifies bin probability distribution calculations to combinatorics rather than psychology.
 
 # Mathematical Translation
-> [!TODO]
-> - [x] Pascal's Triangle: sum of 2 numbers above = number below
-> - [x] element = # of paths
-> - [x] ${n}\choose{k}$ for finding elements of pascal's triangle
-> 	- [x] n = row
-> 	- [x] k = element
-> - [ ] 0 based
-> - [ ] ${n}\choose{k}$ formula
-> - [ ] Expected value formula
-> - [ ] Final expected value formula
-> 	- [ ] Derivation
-> 		- [ ] Redrop
-> 		- [ ] Full
-> 	- [ ] Table of variables
-
 Combinatorics, specifically relating to Pascal's Triangle, is required to complete the task. Pascal's triangle, as shown in Figure 2, is a triangle where an element is equal to the sum of the two elements diagonally above. Note that each element corresponds to the number of paths to it from the apex.
 
 ![[PSMT Draft.jpg]]
@@ -74,5 +59,11 @@ Combinatorics, specifically relating to Pascal's Triangle, is required to comple
 To find a particular element in Pascal's Triangle without drawing it, the combination formula can be used.
 $$
 {{n}\choose{k}} = \frac{n!}{k!(n-k)!}
-$$Where $n$ is the row number and $k$ is the element number.
+$$
+Where $n$ is the row number from top to bottom and $k$ is the element number from left to right, both starting from 0.
 
+To find the amount of money that contestants can earn from a particular bin arrangement, the expected value formula can be used.
+$$
+e = \sum x \times P(x)
+$$
+Where $e$ is the expected value, $x$ is the payout of an outcome, and $P(x)$ is the probability of outcome $x$.
