@@ -53,10 +53,10 @@ Through the use of Python and combinatorics, this investigation aims to:
 # Mathematical Translation
 > [!TODO]
 > - [x] Pascal's Triangle: sum of 2 numbers above = number below
-> - [ ] element = # of paths
-> - [ ] ${n}\choose{k}$ for finding elements of pascal's triangle
-> 	- [ ] n = row
-> 	- [ ] k = element
+> - [x] element = # of paths
+> - [x] ${n}\choose{k}$ for finding elements of pascal's triangle
+> 	- [x] n = row
+> 	- [x] k = element
 > - [ ] 0 based
 > - [ ] ${n}\choose{k}$ formula
 > - [ ] Expected value formula
@@ -70,4 +70,9 @@ Combinatorics, specifically relating to Pascal's Triangle, is required to comple
 
 ![[PSMT Draft.jpg]]
 *Figure 2: Traditional Pascal's Triangle*
+
+To find a particular element in Pascal's Triangle without drawing it, the combination formula can be used.
+$$
+{{n}\choose{k}} = \frac{n!}{k!(n-k)!}
+$$Where $n$ is the row number and $k$ is the element number.
 
