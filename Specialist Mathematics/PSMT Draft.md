@@ -333,3 +333,12 @@ Random 4:
 EV: 2042.741455078125
 ```
 
+## Part C: Finding The Best Slot
+To find the slot with the highest average payout, the aforementioned expected value formula can be used.
+$$
+e = (1.5P_m + P_t)(50000P_M + 6000P_t + R) + 50000P_M + R
+$$
+However, the probabilities used are those skewed by a starting slot rather than the previously calculated general probabilities.
+These can be found by calculating elements differently. Previously, elements were calculated as such:
+$$\binom{2}{2}_{merged} = \binom{2}{2}_{triangle\space1} + \binom{2}{1}_{triangle\space2} + \binom{2}{0}_{triangle\space3} = 4$$
+Instead, calculating them with $k - st
