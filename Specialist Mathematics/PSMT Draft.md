@@ -47,5 +47,7 @@ Through the use of Python and combinatorics, this investigation aims to:
 # Mathematical Translation
 What I need:
 - element = # of paths
-- n choose k for finding elements of pascal's triangle
-- ${n}\choose{k}$
+- ${n}\choose{k}$ for finding elements of pascal's triangle
+	- n = row
+	- k = element
+	- 0 based
