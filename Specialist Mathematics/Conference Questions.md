@@ -6,3 +6,4 @@ Hopes And Dreams: None
 1. Is assuming the player will pick a random slot a good idea given that part C is solving for the best slot?
 
 # Low Priority
+1. Are my figures properly formatted?
