@@ -75,12 +75,14 @@ The shape of The Wall game is that of four merged pascal's triangles, meaning th
 ![[PSMT Draft.jpeg]]
 *Figure 3: Merged Pascal's Triangles*
 
+Below are important properties of the merged Pascal's Triangle.
+
 An element in the merged Pascal's Triangle is the sum of all overlapping elements in that position.
 Take row 2, element 2, denoted as ${{2}\choose{2}}$ from now on, as an example:
 $$
 \binom{2}{2}_{merged} = \binom{2}{2}_{triangle\space1} + \binom{2}{1}_{triangle\space2} + \binom{2}{0}_{triangle\space3} = 4
 $$
-For later use, a python function has been created to find the value at any given row and element.
+For later use, a python function is created to find the value at any given row and element.
 ```python
 # Function to find pascal value based on row number (n), element number (r), and number of triangles (tris, 4 by default)
 def value(n, r, tris):
@@ -92,3 +94,18 @@ def value(n, r, tris):
     return num
 ```
 
+To find the total number of elements in a row the row number, $n$, can be added to the number of triangles, 4.
+$$
+Total\space Elements = n + 4
+$$
+A python function is created for this too.
+```python
+# Calculate number of elements in row (n) using number of triangles (tris)
+def total_row(n, tris):
+    return n + tris
+```
+
+The sum of all elements is the number of paths to a row.
+$$
+
+$$
