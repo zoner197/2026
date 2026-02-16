@@ -131,3 +131,30 @@ def total_probability(n, r, tris):
     return value(n, r, tris) / total_paths(n, tris)
 ```
 
+This process has to be repeated for every bin, for which a python program has been created.
+```python
+import probability as prob
+
+def bins(n, tris):
+    bins = []
+    
+    for bin in range(prob.total_row(n, tris)):
+        bins.append(prob.total_probability(n, bin, tris))
+    return bins
+
+if __name__ == "__main__":
+    print(bins(4, 4))
+```
+The output:
+```
+[0.015625, 0.078125, 0.171875, 0.234375, 0.234375, 0.171875, 0.078125, 0.015625]
+```
+
+The probabilities can be read as:
+Bin 0: 0.015265
+Bin 2: 0.078125
+...
+Bin 7: 0.015625
+
+## Part B: Assigning Values to Bins
+To assign values to each bin and ensure the expected value is within $
