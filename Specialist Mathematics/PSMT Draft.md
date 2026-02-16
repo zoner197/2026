@@ -66,7 +66,8 @@ Through the use of Python and combinatorics, this investigation aims to:
 > 		- [ ] Full
 > 	- [ ] Table of variables
 
-Combinatorics, specifically relating to Pascal's Triangle, is required to complete the task. Pascal's triangle, as shown in Figure 2, is a triangle where an element is equal to the sum of the two elements diagonally above. Noit
+Combinatorics, specifically relating to Pascal's Triangle, is required to complete the task. Pascal's triangle, as shown in Figure 2, is a triangle where an element is equal to the sum of the two elements diagonally above. Note that each element corresponds to the number of paths to it from the apex.
 
 ![[PSMT Draft.jpg]]
 *Figure 2: Traditional Pascal's Triangle*
+
