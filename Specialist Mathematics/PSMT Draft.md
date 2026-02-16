@@ -1,4 +1,6 @@
 # Title Page \[PLACEHOLDER]
+> [!TODO]
+
 ![[Pasted image 20260214162407.png]]
 > "We're cooked."
 > \- Sun Tzu, The Art of War
@@ -7,19 +9,22 @@ Name: Kavii Sompura
 Student Number: 165
 
 # Contents
-...
+> [!TODO]
 
 # Appendix
-...
+> [!TODO]
+> Place all code here
 
 # Abstract
-> [!note]
-> Please shorten and convert dot points into paragraphs where appropriate.
+> [!TODO]
+> Shorten and convert dot points into paragraphs where appropriate.
 
+## Game Summary
 The Wall is a game show where contestants answer general knowledge questions and get to drop a ball into a quincunx if correct. They can pick from one of four slots to drop the ball from, and it can fall into one of eight bins.
 ![[Pasted image 20260214182910.png]]
 *Figure 1: The Wall Diagram*
 
+## Values
 Each bin contains one of the following:
 - Minimum Prize: $0
 - Maximum Prize: $50,000
@@ -27,14 +32,15 @@ Each bin contains one of the following:
 - Multiplier: Contestant can redrop, but all bin values except Try Again and Multiplier are multiplier by 1.5. Try Again remains $6000, while Multiplier is replaced with $0.
 - The four remaining bins contain different prize values between $0 and $50,000.
 
+## Aim
 Through the use of Python and combinatorics, this investigation aims to:
 1. Analyze the probability distribution of all bins.
 2. Assign values to each bin that are within $\pm5\%$ of the Expected Return ($2000).
 3. Find the best slot for contestants to drop the ball into.
 
 # Formulate
-> [!note] Note
-> Please fix dog water reasoning.
+> [!TODO] Note
+> Fix dog water reasoning.
 ## Observations
 - Contestants cannot get a redrop within a redrop due to the Try Again and Multiplier values being replaced. This is essential, because calculations would be recursive otherwise, leading to infinite expected values.
 - The shape of the quincunx is four merged Pascal's Triangles, allowing for probability and path calculations through combinatorics.
@@ -45,9 +51,14 @@ Through the use of Python and combinatorics, this investigation aims to:
 - The player picks their slot at random, so a $\frac{1}{4}$ probability can be assumed for each slot. This is critical because it simplifies bin probability distribution calculations to combinatorics rather than psychology.
 
 # Mathematical Translation
-What I need:
-- element = # of paths
-- ${n}\choose{k}$ for finding elements of pascal's triangle
-	- n = row
-	- k = element
-	- 0 based
+> [!TODO]
+> **What I need:**
+> - **Pascal's Triangle: sum of 2 numbers above = number below**
+> - **element = # of paths**
+> - **${n}\choose{k}$ for finding elements of pascal's triangle**
+> 	- **n = row**
+> 	- **k = element**
+> - **0 based**
+> - **${n}\choose{k}$ formula**
+> - **Expected value formula**
+
