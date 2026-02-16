@@ -107,5 +107,27 @@ def total_row(n, tris):
 
 The sum of all elements is the number of paths to a row.
 $$
-
+Total\space Paths = \sum_{i=0}^{Total \space Elements} \binom{n_i}{k_i}
 $$
+The python function for this:
+```python
+# Calculate total paths using row (n) and triangles (tris)
+def total_paths(n, tris):
+    paths = 0
+    for r in range(total_row(n, tris)):
+        paths += value(n, r, tris)
+    return paths
+```
+
+Using all the properties above, the probability of the ball landing in a certain bin can be calculated.
+If the bin is treated as an element, then the formula to calculate the probability of the ball landing on a certain element can be used.
+$$
+P(element) = \frac{\binom{n}{k}}{Total \space Paths}
+$$
+Below is the python equivalent of this.
+```python
+# Find the probability of landing on a certain element assuming any starting element at n = 0
+def total_probability(n, r, tris):
+    return value(n, r, tris) / total_paths(n, tris)
+```
+

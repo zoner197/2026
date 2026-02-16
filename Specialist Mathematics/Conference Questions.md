@@ -17,6 +17,6 @@ $$
 # Low Priority
 1. Are my figures properly formatted?
 2. Are formulas, images with text, and code blocks included in the word count?
-	1. ~~Does this mean I can take a screenshot of my PSMT?~~
+	1. ~~Does this mean I can submit a screenshot of my PSMT?~~
 3. Am I overly reliant on diagrams?
 4. Are my explanations coherent? (i.e. Is there a better way to order them?)
