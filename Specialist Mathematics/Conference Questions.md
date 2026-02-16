@@ -12,7 +12,8 @@ Hopes And Dreams: None
 \binom{2}{2}_{merged} = \binom{2}{2}_{triangle\space1} + \binom{2}{1}_{triangle\space2} + \binom{2}{0}_{triangle\space3} = 4
 $$
 3. Does the above need further explanation?
-4. Do you require further explanation of my code?
+4. Are all lines of working required? (e.g. )
+5. Do you require further explanation of my code?
 
 # Low Priority
 1. Are my figures properly formatted?

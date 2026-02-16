@@ -157,4 +157,21 @@ Bin 2: 0.078125
 Bin 7: 0.015625
 
 ## Part B: Assigning Values to Bins
-To assign values to each bin and ensure the expected value is within $
+To assign values to each bin and ensure the expected value is within $\pm5\%$ of $2000, the expected value formula is used with game values substituted in.
+$$
+e = \sum xP(x)
+$$
+$$
+e = (1.5 \times e_{redrop})P_m + 50000P_M + 0P_0 + e_{redrop}P_t + R
+$$
+$e_{redrop}$ needs to be calculated separately due to the change in values on a redrop.
+$$
+e_{redrop} = 0P_m + 0P_0 + 6000P_t + 50000P_M + R
+$$
+$$
+e_{redrop} = 50000P_M + 6000P_t + R
+$$
+$e_{redrop}$ is substituted into $e$ and simplified, yielding:
+$$
+e = (1.5P_m + P_t)(50000P_M + 6000P_t + R) + 50000P_M + R
+$$
