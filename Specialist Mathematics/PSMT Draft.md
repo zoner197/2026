@@ -67,3 +67,5 @@ $$
 e = \sum x \times P(x)
 $$
 Where $e$ is the expected value, $x$ is the payout of an outcome, and $P(x)$ is the probability of outcome $x$.
+
+# Solve
