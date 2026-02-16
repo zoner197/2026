@@ -64,8 +64,9 @@ Where $n$ is the row number from top to bottom and $k$ is the element number fro
 
 To find the amount of money that contestants can earn from a particular bin arrangement, the expected value formula can be used.
 $$
-e = \sum x \times P(x)
+e = \sum x P(x)
 $$
 Where $e$ is the expected value, $x$ is the payout of an outcome, and $P(x)$ is the probability of outcome $x$.
 
 # Solve
+## Part A: Finding Bin Probabilities

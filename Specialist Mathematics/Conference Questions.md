@@ -7,3 +7,5 @@ Hopes And Dreams: None
 
 # Low Priority
 1. Are my figures properly formatted?
+2. Are formulas and images with text included in the word limit?
+	1. ~~Does this mean I can take a screenshot of my PSMT?~~
