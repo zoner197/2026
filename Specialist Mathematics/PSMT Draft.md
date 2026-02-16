@@ -44,10 +44,8 @@ Through the use of Python and combinatorics, this investigation aims to:
 - The pegs are evenly spaced, the ball cannot bounce to other pegs on the same or higher row, and friction/air resistance are negligible, so there is exactly a 50% chance of the ball falling either side. This assumption is crucial for the use of Pascal's Triangle and combinatorics in the bin probability calculations.
 - The player picks their slot at random, so a $\frac{1}{4}$ probability can be assumed for each slot. This is critical because it simplifies bin probability distribution calculations to combinatorics rather than psychology.
 
-# Some section
-Consider the Pascal's Triangle in Figure 2.
-
-![[Picture of pascal's triangle]]
-*Figure 2: Pascal's triangle*
-
-Each number is equal to the number of paths to its position from the top of the triangle.
+# Mathematical Translation
+What I need:
+- element = # of paths
+- n choose k for finding elements of pascal's triangle
+- ${n}\choose{k}$
