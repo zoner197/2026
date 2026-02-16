@@ -4,7 +4,7 @@
 > \- Sun Tzu, The Art of War
 
 Name: Kavii Sompura
-Student Number: 165==
+Student Number: 165
 
 # Contents
 ...
@@ -38,7 +38,7 @@ Through the use of Python and combinatorics, this investigation aims to:
 ## Observations
 - Contestants cannot get a redrop within a redrop due to the Try Again and Multiplier values being replaced. This is essential, because calculations would be recursive otherwise, leading to infinite expected values.
 - The shape of the quincunx is four merged Pascal's Triangles, allowing for probability and path calculations through combinatorics.
-- ...
+- The quincunx is a closed system where the ball cannot exit the peg area, meaning the sum of all bin probabilities is 1, permitting verification of probabilities.
 ## Assumptions
 - On a multiplier redrop, the Try Again value is not multiplied. This is an essential assumption to ensure that the expected value remains constant.
 - The pegs are evenly spaced, the ball cannot bounce to other pegs on the same or higher row, and friction/air resistance are negligible, so there is exactly a 50% chance of the ball falling either side. This assumption is crucial for the use of Pascal's Triangle and combinatorics in the bin probability calculations.
