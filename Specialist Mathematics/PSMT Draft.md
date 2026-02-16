@@ -465,5 +465,9 @@ The model yields an expected value of $2042.74, within the $\pm5\%$ range of the
 ## Considering Observations
 The observation that the board consists of merged Pascal's Triangles is validated by the symmetry of the results. The probabilities found for Bin 0 (0.0156) and Bin 7 (0.0156) are identical, closely aligning with the symmetry of the quincunx. Additionally, preventing infinite redrops was critical. Without this, the expected value formula would be recursive, leading to an unreasonable payout.
 
-# Strengths
-Using python's functions 
+## Strengths
+- Calculating overlapping triangles is susceptible to error, making the use of Python a strength, since the script computes values and ensures $\sum P(x) = 1$.
+- Instead of guessing and checking bin values, a randomized algorithm is used to solve for $r_4$ ensuring that the $2000 target is met regardless of bin arrangement. This makes the model reusable, ensuring it can generate solutions for any values the game show may request in the future.
+## Limitations
+- The model assumes a frictionless environment, whereas in reality, the ball's initial velocity could lead to non-random outcomes, for example the ball favoring the center. The Multiplier Bin has a probability of 23.4%, meaning even a 2% change would significantly increase the expected value, costing the game show more than intended.
+- To ensure they can be used on TV, the bin values were rounded to whole numbers. While this is necessary, it introduces some discrepancy between the target ($2000) and the expected value ($2042.74). Though this is within the acceptable $\pm5\%$ error range
