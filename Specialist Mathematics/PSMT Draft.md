@@ -341,4 +341,47 @@ $$
 However, the probabilities used are those skewed by a starting slot rather than the previously calculated general probabilities.
 These can be found by calculating elements differently. Previously, elements were calculated as such:
 $$\binom{2}{2}_{merged} = \binom{2}{2}_{triangle\space1} + \binom{2}{1}_{triangle\space2} + \binom{2}{0}_{triangle\space3} = 4$$
-Instead, calculating them with $k - st
+Calculating them with $k - k_{starting \space slot}$ instead of $k$ gives the total numbers of paths to that element from the starting slot chosen, for example slot 1:
+$$
+\binom{2}{2}_{merged} = \binom{2}{2 - 1}_{triangle\space1} + \binom{2}{1 - 1}_{triangle\space2} + \binom{2}{0 - 1}_{triangle\space3}
+$$
+But the last term $\binom{2}{0-1}_{triangle \space 3}$ is invalid, so the equation becomes:
+$$
+\binom{2}{2}_{merged} = \binom{2}{1}_{triangle\space1} + \binom{2}{0}_{triangle\space2} = 3
+$$
+
+The previous python functions are altered to return results modified by the starting slot.
+```python
+# Function to find value based on a start element
+def paths_to(n, r, start):
+    if 0 <= r - start <= n:
+        return math.comb(n, r - start)
+    return 0
+```
+
+```python
+# Calculate total paths using row (n) and triangles (tris) given a starting element in n = 0 (start)
+def total_paths_from_start(n, start, tris):
+    paths = 0
+    for r in range(total_row(n, tris)):
+        paths += paths_to(n, r, start)
+    return paths
+```
+
+```python
+# Find the probability of landing on a certain element given a starting element at n = 0
+def probability(n, r, start, tris):
+    return paths_to(n, r, start) / total_paths_from_start(n, start, tris)
+```
+
+```python
+# Function to find probability distribution based on starting slot
+
+def bins(start):
+    bins = []
+    for bin in range(8):
+        bins.append(p.paths_to(4, bin, start)/p.total_paths_from_start(4, start, 4))
+    return bins
+```
+
+Additionally, a python program is made to automatically find the best
