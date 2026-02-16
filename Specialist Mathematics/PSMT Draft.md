@@ -187,8 +187,100 @@ $e_{redrop}$ is substituted into $e$ and simplified, yielding:
 $$
 e = (1.5P_m + P_t)(50000P_M + 6000P_t + R) + 50000P_M + R
 $$
-Since all the probabilities are constants, the only value left to be determined is $R$, so it is made the subject.
+Since all the expected value and probabilities are constants, the only value left to be determined is $R$, so it is made the subject and $e$ is replaced with 2000.
 $$
-\frac{e - (1.5P_m + P_t)(50000P_M + 6000P_t) - 50000P_M}{1.5P_m + P_t + 1} = R
+\frac{2000 - (1.5P_m + P_t)(50000P_M + 6000P_t) - 50000P_M}{1.5P_m + P_t + 1} = R
 $$
-The 
+To automatically calculate this, a python program is made to pick random bin arrangements and $r_1$ to $r_4$ value
+```python
+from distribution import bins as b
+from random import seed, shuffle, randint
+
+# Picking constant arbitrary seed for reproducibility
+seed(67)
+
+# Simple class to store data for each P and r_i
+class P:
+    def __init__(self, name, price, value = 0, bin_index = 0):
+        self.name = name
+        self.price = price
+        self.value = value
+        self.bin_index = bin_index
+
+e = 2000
+
+# Setting up bins
+probability = b(4,4)
+
+for bin_number, prob in enumerate(probability):
+    probability[bin_number] = (bin_number, prob)
+
+P_0 = P("Minimum", 0)
+P_M = P("Maximum", 50000)
+P_t = P("Try Again", 6000)
+P_m = P("Multiplier", 0)
+r_1 = P("Random 1", 0)
+r_2 = P("Random 2", 0)
+r_3 = P("Random 3", 0)
+r_4 = P("Random 4", 0)
+bin = [P_0, P_M, P_t, P_m, r_1, r_2, r_3, r_4]
+
+# Function that shuffles the bins
+def shuffle_bins():
+    shuffle(probability)
+    for i in range(len(probability)):
+        bin[i].value = probability[i][1]
+        bin[i].bin_index = probability[i][0]
+
+# R = r_1P(r_1) + ... r_4P(r_4)
+R = 0
+# r_1, r_2, r_3, r_4 values
+r_1_value = 0
+r_2_value = 0
+r_3_value = 0
+r_4_value = -1
+while R <= 0:
+    # Shuffle bins until valid R
+    shuffle_bins()
+
+    # Calculate total of random bin (r_i) values
+    R = (e - (1.5 * P_m.value)*(50000 * P_M.value + 6000 * P_t.value) - 50000 * P_M.value)/(1.5 * P_m.value + P_t.value + 1)
+
+# Pick random r_1 to r_3 values and calculate r_4 to ensure target ev
+while not (50000 >= r_4_value >= 0):
+    r_1_value = randint(0, 50000)
+    r_2_value = randint(0, 50000)
+    r_3_value = randint(0, 50000)
+    r_4_value = int(round((R - r_1_value * r_1.value - r_2_value * r_2.value - r_3_value * r_3.value)/r_4.value, 0))
+
+r_1.price = r_1_value
+r_2.price = r_2_value
+r_3.price = r_3_value
+r_4.price = r_4_value
+
+# Function that returns the EV
+def ev():
+    R_dupe = r_1_value * r_1.value + r_2_value * r_2.value + r_3_value * r_3.value + r_4_value * r_4.value
+    e_t = 6000 * P_t.value + 50000 * P_M.value + R_dupe
+    e_m = 6000 * P_t.value + 75000 * P_M.value + 1.5 * R_dupe
+    return e_t * P_t.value + e_m * P_m.value + 50000 * P_M.value + R_dupe
+
+# Function that returns the bin index and value of each outcome
+def bins():
+    bin_values = {}
+    for outcome in [P_0, P_M, P_t, P_m, r_1, r_2, r_3, r_4]:
+        bin_values[outcome.name] = {
+            "bin": outcome.bin_index,
+            "value": outcome.price
+        }
+    
+    return bin_values
+
+if __name__ == "__main__":
+    # Print results if running as program and not module
+    print(f"R: {R}")
+    for i in bin:
+        print(f"{i.name}: \n\tbin: {i.bin_index + 1}\n\tprobability: {i.value}\n\tvalue: {i.price}")
+
+    print(f"\nEV: {ev()}")
+```

@@ -20,3 +20,4 @@ $$
 2. Are formulas, images with text, and code blocks included in the word count?
 3. Do I appear to be overly reliant on diagrams?
 4. Are my explanations coherent? (i.e. Is there a better way to order them?)
+5. Do I have to justify *why* I've made a python program for something rather than just calculate it manually?
