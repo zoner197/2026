@@ -384,4 +384,72 @@ def bins(start):
     return bins
 ```
 
-Additionally, a python program is made to automatically find the best
+Additionally, a python program is made to calculate the expected value using starting slot and return the best one.
+
+```python
+import probability as p
+import expected    as e
+
+# Function to find probability distribution based on starting slot
+def bins(start):
+    bins = []
+
+    for bin in range(8):
+        bins.append(p.paths_to(4, bin, start)/p.total_paths_from_start(4, start, 4))
+
+    return bins
+
+# Precalculate bin probabilities for all starting slots
+distributions = []
+for slot in range(4):
+    distributions.append(bins(slot))
+
+def expected_value(distribution):
+    bins = e.bins()
+    
+    base = bins["Maximum"]["value"] * distribution[bins["Maximum"]["bin"]] + bins["Random 1"]["value"] * distribution[bins["Random 1"]["bin"]] + bins["Random 2"]["value"] * distribution[bins["Random 2"]["bin"]] + bins["Random 3"]["value"] * distribution[bins["Random 3"]["bin"]] + bins["Random 4"]["value"] * distribution[bins["Random 4"]["bin"]]
+    try_again = base + bins["Try Again"]["value"] * distribution[bins["Try Again"]["bin"]]
+    multiplier = 1.5 * base + bins["Try Again"]["value"] * distribution[bins["Try Again"]["bin"]]
+    ev = base + try_again * distribution[bins["Try Again"]["bin"]] + multiplier * distribution[bins["Multiplier"]["bin"]]
+
+    return ev
+
+def find_best():
+    cache: list = []
+
+    best: tuple = (0, 0)
+    for slot, distribution in enumerate(distributions):
+        ev = expected_value(distribution)
+        if best[1] < ev:
+            best = (slot, ev)
+        elif best[1] == ev:
+            print(f"Duplicate case: {slot}, {ev}")
+        
+        cache.append((slot, ev))
+    
+    return best, cache
+
+if __name__ == "__main__":
+    best, all_dist = find_best()
+    print(f"{all_dist}\n\n{best}")
+```
+
+The output:
+```
+[(0, 1216.984375), (1, 919.7890625), (2, 938.5234375), (3, 4233.22265625)]
+
+(3, 4233.22265625)
+```
+
+The best is slot 3, resulting in an expected value of approximately $4233.22.
+
+# Evaluate
+## Verification of Results
+The results have been verified throughout the solving.
+
+The bin probabilities add up to 1:
+$$
+0.015625 + 0.078125 + 0.171875 + 0.234375 + 0.234375 + 0.171875 + 0.078125 + 0.015625 = 1
+$$
+
+$r_4$ is calculated to be 
