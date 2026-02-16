@@ -70,3 +70,4 @@ Where $e$ is the expected value, $x$ is the payout of an outcome, and $P(x)$ is 
 
 # Solve
 ## Part A: Finding Bin Probabilities
+The shape of The Wall game is that of four merged pascal's triangles
