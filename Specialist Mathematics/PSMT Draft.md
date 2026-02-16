@@ -52,7 +52,7 @@ Through the use of Python and combinatorics, this investigation aims to:
 
 # Mathematical Translation
 > [!TODO]
-> - [ ] Pascal's Triangle: sum of 2 numbers above = number below
+> - [x] Pascal's Triangle: sum of 2 numbers above = number below
 > - [ ] element = # of paths
 > - [ ] ${n}\choose{k}$ for finding elements of pascal's triangle
 > 	- [ ] n = row
@@ -66,6 +66,7 @@ Through the use of Python and combinatorics, this investigation aims to:
 > 		- [ ] Full
 > 	- [ ] Table of variables
 
-Combinatorics, specifically relating to Pascal's Triangle, is required to complete the task. Pascal's triangle, as shown in Figure 2, is a triangle where an element is equal to the sum of the two elements diagonally above.
+Combinatorics, specifically relating to Pascal's Triangle, is required to complete the task. Pascal's triangle, as shown in Figure 2, is a triangle where an element is equal to the sum of the two elements diagonally above. Noit
+
 ![[PSMT Draft.jpg]]
 *Figure 2: Traditional Pascal's Triangle*
