@@ -75,4 +75,8 @@ The shape of The Wall game is that of four merged pascal's triangles, meaning th
 ![[PSMT Draft.jpeg]]
 *Figure 3: Merged Pascal's Triangles*
 
-To find a certain element in the merged Pascal's Triangle, that element must be 
+An element in the merged Pascal's Triangle is the sum of all overlapping elements in that position.
+Take row 2, element 2, denoted as ${{2}\choose{2}}$ from now on, as an example:
+$$
+\binom{2}{2}_{merged} = \binom{2}{2}_{triangle\space1} + \binom{2}{1}_{triangle\space2} + \binom{2}{0}_{triangle\space3}
+$$
