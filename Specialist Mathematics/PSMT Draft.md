@@ -452,4 +452,10 @@ $$
 0.015625 + 0.078125 + 0.171875 + 0.234375 + 0.234375 + 0.171875 + 0.078125 + 0.015625 = 1
 $$
 
-$r_4$ is calculated to be 
+$r_4$ is calculated to be a number with many decimal digits that when substituted into the expected value equation with the other values, yields exactly $2000, so it is rounded to the nearest whole number for the game show. This could have introduced enough error to break the $\pm5\%$ range, justifying the expected value check after rounding, resulting in approximately $2042.74, which is within the range.
+
+During calculations involving a starting slot, error checks are used in every python function to ensure there are no invalid values (e.g. $\binom{2}{-1}$).
+
+> [!NOTE] Additions
+> I verified the results in hundreds of ways that I didn't mention. I'll add them in if the word count permits.
+
