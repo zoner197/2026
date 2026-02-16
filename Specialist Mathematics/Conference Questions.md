@@ -12,8 +12,10 @@ Hopes And Dreams: None
 \binom{2}{2}_{merged} = \binom{2}{2}_{triangle\space1} + \binom{2}{1}_{triangle\space2} + \binom{2}{0}_{triangle\space3} = 4
 $$
 3. Does the above need further explanation?
+4. Do you require further explanation of my code?
 
 # Low Priority
 1. Are my figures properly formatted?
-2. Are formulas and images with text included in the word limit?
+2. Are formulas, images with text, and code blocks included in the word count?
 	1. ~~Does this mean I can take a screenshot of my PSMT?~~
+3. Am I overly reliant on diagrams?
