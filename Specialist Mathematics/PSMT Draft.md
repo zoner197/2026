@@ -145,6 +145,7 @@ def bins(n, tris):
 if __name__ == "__main__":
     print(bins(4, 4))
 ```
+
 The output:
 ```
 [0.015625, 0.078125, 0.171875, 0.234375, 0.234375, 0.171875, 0.078125, 0.015625]
@@ -191,7 +192,15 @@ Since all the expected value and probabilities are constants, the only value lef
 $$
 \frac{2000 - (1.5P_m + P_t)(50000P_M + 6000P_t) - 50000P_M}{1.5P_m + P_t + 1} = R
 $$
-To automatically calculate this, a python program is made to pick random bin arrangements and $r_1$ to $r_4$ value
+Through this formula, $R$ can be calculated.
+
+However, to find individual values for the custom bins, arbitrary $r_1$ to $r_3$ values can be substituted into the following equation, leaving only $r_4$ to be solved.
+$$
+\frac{R - r_1P_1 - r_2P_2 - r_3P_3}{P_4} = r_4
+$$
+If $r_4$ is negative, different values need to be chosen.
+
+To find usable bin values, a python program is made to pick random bin arrangements and $r_1$ to $r_3$ values. It then calculates $r_4$ using the above method to ensure the expected value remains within $\pm5\%$ of $2000. The values are also rounded to whole numbers so they can be used in a game show, which works because of the acceptable $\pm5\%$ error range.
 ```python
 from distribution import bins as b
 from random import seed, shuffle, randint
@@ -284,3 +293,43 @@ if __name__ == "__main__":
 
     print(f"\nEV: {ev()}")
 ```
+
+The output:
+```
+R: 545.0819672131148
+Minimum: 
+        bin: 1
+        probability: 0.015625
+        value: 0
+Maximum: 
+        bin: 8
+        probability: 0.015625
+        value: 50000
+Try Again: 
+        bin: 2
+        probability: 0.078125
+        value: 6000
+Multiplier: 
+        bin: 4
+        probability: 0.234375
+        value: 0
+Random 1:
+        bin: 6
+        probability: 0.171875
+        value: 789
+Random 2:
+        bin: 7
+        probability: 0.078125
+        value: 722
+Random 3:
+        bin: 5
+        probability: 0.234375
+        value: 1076
+Random 4:
+        bin: 3
+        probability: 0.171875
+        value: 587
+
+EV: 2042.741455078125
+```
+
