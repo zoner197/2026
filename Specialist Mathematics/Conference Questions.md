@@ -24,3 +24,5 @@ $$
 5. Do I have to justify *why* I've made a python program for something rather than just calculate it manually?
 6. What are you even supposed to put in the Evaluate section?
 	1. Is human error prevention an acceptable strength?
+7. What is included in the page count?
+8. Do I need to better format the report?

@@ -1,5 +1,6 @@
 # Title Page \[PLACEHOLDER]
 > [!TODO]
+> PLACE ALL DIAGRAMS IN THE APPENDIX
 
 ![[Pasted image 20260214162407.png]]
 > "We're cooked."
@@ -26,16 +27,16 @@ The Wall is a game show where contestants answer general knowledge questions and
 
 ## Values
 Each bin contains one of the following:
-- Minimum Prize: $0
-- Maximum Prize: $50,000
-- Try Again: Contestant can redrop. On the redrop, the Try Again value is replaced with $6000.
-- Multiplier: Contestant can redrop, but all bin values except Try Again and Multiplier are multiplier by 1.5. Try Again remains $6000, while Multiplier is replaced with $0.
-- The four remaining bins contain different prize values between $0 and $50,000.
+- Minimum Prize: \$0
+- Maximum Prize: \$50,000
+- Try Again: Contestant can redrop. On the redrop, the Try Again value is replaced with \$6000.
+- Multiplier: Contestant can redrop, but all bin values except Try Again and Multiplier are multiplier by 1.5. Try Again remains \$6000, while Multiplier is replaced with $0.
+- The four remaining bins contain different prize values between \$0 and \$50,000.
 
 ## Aim
 Through the use of Python and combinatorics, this investigation aims to:
 1. Analyze the probability distribution of all bins.
-2. Assign values to each bin that are within $\pm5\%$ of the Expected Return ($2000).
+2. Assign values to each bin that are within $\pm5\%$ of the Expected Return (\$2000).
 3. Find the best slot for contestants to drop the ball into.
 
 # Formulate
@@ -47,7 +48,7 @@ Through the use of Python and combinatorics, this investigation aims to:
 - The quincunx is a closed system where the ball cannot exit the peg area, meaning the sum of all bin probabilities is 1, permitting verification of probabilities.
 ## Assumptions
 - On a multiplier redrop, the Try Again value is not multiplied. This is an essential assumption to ensure that the expected value remains constant.
-- The pegs are evenly spaced, the ball cannot bounce to other pegs on the same or higher row, and friction/air resistance are negligible, so there is exactly a 50% chance of the ball falling either side. This assumption is crucial for the use of Pascal's Triangle and combinatorics in the bin probability calculations.
+- The pegs are evenly spaced, the ball cannot bounce to other pegs on the same or higher row, and friction/air resistance are negligible, so there is exactly a 50\% chance of the ball falling either side. This assumption is crucial for the use of Pascal's Triangle and combinatorics in the bin probability calculations.
 - The player picks their slot at random, so a $\frac{1}{4}$ probability can be assumed for each slot. This is critical because it simplifies bin probability distribution calculations to combinatorics rather than psychology.
 
 # Mathematical Translation
@@ -200,7 +201,7 @@ $$
 $$
 If $r_4$ is negative, different values need to be chosen.
 
-To find usable bin values, a python program is made to pick random bin arrangements and $r_1$ to $r_3$ values. It then calculates $r_4$ using the above method to ensure the expected value remains within $\pm5\%$ of $2000. The values are also rounded to whole numbers so they can be used in a game show, which works because of the acceptable $\pm5\%$ error range.
+To find usable bin values, a python program is made to pick random bin arrangements and $r_1$ to $r_3$ values. It then calculates $r_4$ using the above method to ensure the expected value remains within $\pm5\%$ of \$2000. The values are also rounded to whole numbers so they can be used in a game show, which works because of the acceptable $\pm5\%$ error range.
 ```python
 from distribution import bins as b
 from random import seed, shuffle, randint
@@ -452,7 +453,7 @@ $$
 0.015625 + 0.078125 + 0.171875 + 0.234375 + 0.234375 + 0.171875 + 0.078125 + 0.015625 = 1
 $$
 
-$r_4$ is calculated to be a number with many decimal digits that when substituted into the expected value equation with the other values, yields exactly $2000, so it is rounded to the nearest whole number for the game show. This could have introduced enough error to break the $\pm5\%$ range, justifying the expected value check after rounding, resulting in approximately $2042.74, which is within the range.
+$r_4$ is calculated to be a number with many decimal digits that when substituted into the expected value equation with the other values, yields exactly \$2000, so it is rounded to the nearest whole number for the game show. This could have introduced enough error to break the $\pm5\%$ range, justifying the expected value check after rounding, resulting in approximately \$2042.74, which is within the range.
 
 During calculations involving a starting slot, error checks are used in every python function to ensure there are no invalid values (e.g. $\binom{2}{-1}$).
 
@@ -460,14 +461,14 @@ During calculations involving a starting slot, error checks are used in every py
 > I verified the results in hundreds of ways that I didn't mention. I'll add them in if the word count permits.
 
 ## Considering Assumptions
-The model yields an expected value of $2042.74, within the $\pm5\%$ range of the $2000 target. This result is highly reasonable under the 50% split assumption. Since the model assumes symmetry, the resulting distribution is a binomial expansion. If this assumption was removed, the probabilities would skew, moving the expected return outside the $\pm5\%$.
+The model yields an expected value of \$2042.74, within the $\pm5\%$ range of the \$2000 target. This result is highly reasonable under the 50% split assumption. Since the model assumes symmetry, the resulting distribution is a binomial expansion. If this assumption was removed, the probabilities would skew, moving the expected return outside the $\pm5\%$.
 
 ## Considering Observations
 The observation that the board consists of merged Pascal's Triangles is validated by the symmetry of the results. The probabilities found for Bin 0 (0.0156) and Bin 7 (0.0156) are identical, closely aligning with the symmetry of the quincunx. Additionally, preventing infinite redrops was critical. Without this, the expected value formula would be recursive, leading to an unreasonable payout.
 
 ## Strengths
 - Calculating overlapping triangles is susceptible to error, making the use of Python a strength, since the script computes values and ensures $\sum P(x) = 1$.
-- Instead of guessing and checking bin values, a randomized algorithm is used to solve for $r_4$ ensuring that the $2000 target is met regardless of bin arrangement. This makes the model reusable, ensuring it can generate solutions for any values the game show may request in the future.
+- Instead of guessing and checking bin values, a randomized algorithm is used to solve for $r_4$ ensuring that the \$2000 target is met regardless of bin arrangement. This makes the model reusable, ensuring it can generate solutions for any values the game show may request in the future.
 ## Limitations
 - The model assumes a frictionless environment, whereas in reality, the ball's initial velocity could lead to non-random outcomes, for example the ball favoring the center. The Multiplier Bin has a probability of 23.4%, meaning even a 2% change would significantly increase the expected value, costing the game show more than intended.
-- To ensure they can be used on TV, the bin values were rounded to whole numbers. While this is necessary, it introduces some discrepancy between the target ($2000) and the expected value ($2042.74). Though this is within the acceptable $\pm5\%$ error range, this small rounding error could accumulate into a significant variance that impacts the show's budget.
+- To ensure they can be used on TV, the bin values were rounded to whole numbers. While this is necessary, it introduces some discrepancy between the target (\$2000) and the expected value (\$2042.74). Though this is within the acceptable $\pm5\%$ error range, this small rounding error could accumulate into a significant variance that impacts the show's budget.
