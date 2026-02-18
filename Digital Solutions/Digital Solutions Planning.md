@@ -86,6 +86,38 @@ Required usability principles:
 	- No complex UI
 User-interface components:
 - Dashboard
-	- Foc
+	- Focus score
+	- Stress indicator
+	- Session timer
+- Study session
+	- Start/pause button
+- Quick input
+	- Mood tap selection
+- Feedback notification
+	- Haptic tap
+	- Small message
+- Daily summary
+	- Trend graph (similar to those economic ones)
+- Settings screen
+
 Required user experience:
-- PLACEHOLDER
+- Feel calm
+- Minimal cognitive effort to use app
+- Encourage good behavior changes
+- Provide insight without overwhelming the user with graphs, text, and complicated numbers
+The way user interacts:
+1. Start session
+2. Apple Watch uses sensors
+3. Stress spike
+4. Haptic tap
+5. "Consider 2 minute break"
+	1. "breathe for 4"
+	2. "breathe out for 4"
+6. Focus improves
+7. Dashboard reflects
+Predicted user experience:
+Same as required user experiences
+Usability and accessibility principles:
+Already mentioned previously?...
+Why is this user interface the best approach:
+Minimizes distractions while maximizing productivity with extremely minimal UI during study sessions and comprehensive but simple feedback when finished with easy to understand visuals and short textual summaries.
