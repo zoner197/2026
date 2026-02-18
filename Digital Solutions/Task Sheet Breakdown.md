@@ -1,28 +1,16 @@
-Alright, Kavii. Here’s the mission brief — clean, sharp, no fluff.
-
 ## 🚀 The Task (FIA1 – Technical Proposal, 25%)
 
 You are pitching an **Apple Watch app** to a company called _FocusED_.
-
 The app must help senior students improve:
-
 - Focus
-    
 - Stress management
-    
 - Time awareness
-    
 - Wellbeing
-    
 
 And it must:
-
 1. **Collect data** (sensor data like heart rate + user input)
-    
 2. **Process it with algorithms**
-    
 3. **Give meaningful feedback**
-    
 
 You’re presenting this as a **multimodal technical proposal (max 10 mins)**.
 
@@ -31,42 +19,25 @@ You’re presenting this as a **multimodal technical proposal (max 10 mins)**.
 # 🎬 Structure of Your Presentation
 
 ## 1️⃣ Introduction (~1 min)
-
 You explain:
-
 - The **problem scope** (students stressed, distracted, etc.)
-    
 - Constraints (Apple Watch limitations, small screen, battery, etc.)
-    
 - Existing solutions (other focus/stress apps)
-    
 - Why they aren’t enough
-    
 - Your proposed direction
-    
 
 ---
 
 ## 2️⃣ The User Story (~4 mins)
-
 This is the core.
-
 You must:
-
 - Identify required features (e.g., stress tracking, focus timer, break reminders)
-    
 - Identify usability principles:
-    
     - Accessibility
-        
     - Effectiveness
-        
     - Safety
-        
     - Utility
-        
     - Learnability
-        
 - Show **annotated UI sketches**
     
     - Linked screens
