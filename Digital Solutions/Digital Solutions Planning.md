@@ -121,3 +121,9 @@ Usability and accessibility principles:
 Already mentioned previously?...
 Why is this user interface the best approach:
 Minimizes distractions while maximizing productivity with extremely minimal UI during study sessions and comprehensive but simple feedback when finished with easy to understand visuals and short textual summaries.
+Which features require algorithms:
+- PLACEHOLDER
+How will these algorithms work:
+- PLACEHOLDER
+Why are these algorithms the best approach:
+- PLACEHOLDER
