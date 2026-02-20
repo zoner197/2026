@@ -19,4 +19,26 @@
 - [ ] Finish reading book
 - [ ] Redo class PowerPoints at home
 - [ ] Practice exams (Minimum of 3)
-- [ 
+
+# Mathematical Methods
+- [ ] Homework
+- [ ] Learn faster quadratic factorization
+	- [ ] Remember common quadratics
+- [ ] Learn better simultaneous equation solving methods
+- [ ] Learn how to use calculator fully
+
+# Specialist Mathematics
+- [ ] Homework
+	- [ ] Jacq worksheet (FULL)
+	- [ ] Pearson PSMT (Highlighted)
+- [ ] Receive and analyze feedback
+- [ ] Improve PSMT
+	- [ ] Add all images to appendix (Faris et al, 2026)
+- [ ] Get peer feedback
+
+# Physics
+- [ ] Homework
+	- [ ] Spaced retrieval
+	- [ ] Quizzes (if any)
+- [ ] Data test prep (EXAM ON THURSDAY)
+
