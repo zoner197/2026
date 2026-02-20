@@ -7,16 +7,16 @@
 	- [ ] Analyze an artwork from first and second artists using analysis table
 	- [ ] Create one experiment for each artist
 	- [ ] Write report
-	- [ ] Create presentation \[OPTIONAL]
+	- [ ] Create presentation ==\[OPTIONAL]==
 
 # Digital Solutions
 - [ ] Technical Proposal
 	- [ ] Finish part 1/introduction before Friday
 		- [ ] Mind Map Xmind Interface  
 			- [x] Identify typical user and what they would require/need  
-		    - [ ] Identify existing solutions and appraise effectiveness  
-		    - [ ] Identify required algorithms  
-		    - [ ] Identify usability requirements
+			- [x] Identify existing solutions and appraise effectiveness  
+			- [ ] Identify required algorithms  
+			- [ ] Identify usability requirements
 		- [ ] Success Criteria List
 		    - [ ] Determine solution requirements and success criteria
 	- [ ] Finish rest of task
@@ -46,7 +46,7 @@
 - [ ] Homework
 	- [ ] Spaced retrieval
 	- [ ] Quizzes (if any)
-- [ ] Data test prep (EXAM ON THURSDAY)
+- [ ] Data test prep ==(EXAM ON THURSDAY)==
 
 # Plan
 ---
