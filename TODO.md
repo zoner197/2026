@@ -16,7 +16,7 @@
 			- [x] Identify typical user and what they would require/need  
 			- [x] Identify existing solutions and appraise effectiveness  
 			- [ ] Identify required algorithms  
-			- [ ] Identify usability requirements
+			- [x] Identify usability requirements
 		- [ ] Success Criteria List
 		    - [ ] Determine solution requirements and success criteria
 	- [ ] Finish rest of task
