@@ -13,7 +13,7 @@
 - [ ] Technical Proposal
 	- [ ] Finish part 1/introduction before Friday
 		- [ ] Mind Map Xmind Interface  
-			- [ ] Identify typical user and what they would require/need  
+			- [x] Identify typical user and what they would require/need  
 		    - [ ] Identify existing solutions and appraise effectiveness  
 		    - [ ] Identify required algorithms  
 		    - [ ] Identify usability requirements
