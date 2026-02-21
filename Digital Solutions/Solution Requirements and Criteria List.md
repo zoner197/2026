@@ -49,6 +49,3 @@
 - Provide actionable guidance
 - Adapt to individual patterns
 - Support academic pressures
-
-# Mind Map
-[[Student Focus and Wellbeing Companion App WIP PART 1.png]]
