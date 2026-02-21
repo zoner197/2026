@@ -11,14 +11,14 @@
 
 # Digital Solutions
 - [ ] Technical Proposal
-	- [ ] Finish part 1/introduction before Friday
+	- [x] Finish part 1/introduction before Friday
 		- [x] Mind Map Xmind Interface  
 			- [x] Identify typical user and what they would require/need  
 			- [x] Identify existing solutions and appraise effectiveness  
 			- [x] Identify required algorithms  
 			- [x] Identify usability requirements
-		- [ ] Success Criteria List
-		    - [ ] Determine solution requirements and success criteria
+		- [x] Success Criteria List
+		    - [x] Determine solution requirements and success criteria
 	- [ ] Finish rest of task
 
 # Literature
