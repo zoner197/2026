@@ -28,10 +28,6 @@
 
 # Mathematical Methods
 - [ ] Homework
-- [ ] Learn faster quadratic factorization
-	- [ ] Remember common quadratics
-- [ ] Learn better simultaneous equation solving methods
-- [ ] Learn how to use calculator fully
 
 # Specialist Mathematics
 - [ ] Homework
