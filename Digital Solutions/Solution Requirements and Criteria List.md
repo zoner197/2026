@@ -1,4 +1,3 @@
-# Solution Requirements
 ## Functional Requirements
 ### Data collection
 - Collect heart rate and HRV from Apple Watch sensors
