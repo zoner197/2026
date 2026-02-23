@@ -1,5 +1,5 @@
 # Roll Class
-- [ ] Nothing for now
+- [x] Nothing for now
 
 # Visual Art
 - [ ] Portfolio
@@ -41,8 +41,8 @@
 # Physics
 - [ ] Homework
 	- [ ] Spaced retrieval
-	- [ ] Quizzes (if any)
-- [ ] Data test prep ==(EXAM ON THURSDAY)==
+	- [x] Quizzes (if any)
+- [x] Data test prep ==(EXAM ON THURSDAY)==
 
 # Plan
 ---
