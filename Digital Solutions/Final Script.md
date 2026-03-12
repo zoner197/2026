@@ -46,7 +46,7 @@ The UI removes the need for onboarding with an intuitive visual hierarchy, famil
 The core components include a colour-coded radial gauge that displays cognitive load scores (High, Medium, Low), HRV and BPM readings, headers with the time, and a circular glanceable timer. Additionally, the Weekly Trend page includes a simple column graph with a highlighted peak, and the Break Alert features two large buttons for starting or dismissing and some information on sustained strain time and a break length recommendation.
 
 # UX
-Let's discuss the user experience in terms of the earlier introduced proto-personas.
+Let's discuss the user experience in terms of some proto-personas.
 
 ## Proto-Personas
 ### Jeffery
